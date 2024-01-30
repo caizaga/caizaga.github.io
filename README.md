@@ -27,14 +27,14 @@
 
 Utilized R Studio and the Shiny package to perform a cluster analysis related to COVID-19, studying features such as deaths, cases, and vaccinations.
 
-![EEG Band Discovery](/assets/img/eeg_band_discovery.jpeg)
+![EEG Band Discovery](/Assets/R_logo.svg_.webp)
 
 ### Impact Analysis COVID-19 Dashboard
 [Project](https://public.tableau.com/app/profile/carlos.aizaga/viz/Covid-19DashboardCMAR/Dashboard1)
 
 - Utilized SQL Server for the exploratory analysis and subsequent extraction of information related to the COVID-19 pandemic. 
 
-![Bike Study](/assets/img/bike_study.jpeg)
+![Bike Study](/Assets/Tableau-Logo.png)
 
 ### Sentiment Analysis from Viewpoints
 [Project](https://github.com/caizaga/PortafolioProjects/blob/main/Sentiment_Analisys_BV.ipynb)
@@ -43,7 +43,7 @@ Utilized R Studio and the Shiny package to perform a cluster analysis related to
 - Utilized the vader lexicon package, included in NLTK, to separate words associated with positive, negative, and neutral sentiments.
 - Created word clouds with the objective of visually representing positive, negative, and neutral sentiments.
 
-![EEG Band Discovery](/assets/img/eeg_band_discovery.jpeg)  
+![EEG Band Discovery](/Assets/python-logo-2.png)  
 
 ### Analysis Top 100 Companies Venezuela Dashboard
 [Project](https://public.tableau.com/app/profile/carlos.aizaga/viz/TopCompanies2022/Dashboard1)
