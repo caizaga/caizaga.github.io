@@ -1,40 +1,51 @@
 # Data Scientist
 
-#### Technical Skills: Python, SQL, R, Power BI
+#### Technical Skills: Python, SQL, R, Power BI, MS Excel
 
-## Education
-- Ph.D., Physics | The University of Texas at Dallas (_May 2022_)								       		
-- M.S., Sistemas de la informacion	| Pontificia Universidad Catolica del Ecuador (_December 2019_)	 			        		
-- B.S., Physics | The University of Texas at Dallas (_May 2017_)
+## Education							       		
+- Master in Information Systems, mention Data Science	| Pontificia Universidad Católica del Ecuador (_Marzo 2024_)	 			        		
+- Economist | Universidad Central de Venezuela  (April 2015_)
 
 ## Work Experience
-**Data Scientist @ Toyota Financial Services (_June 2022 - Present_)**
-- Uncovered and corrected missing step in production data pipeline which impacted over 70% of active accounts
-- Redeveloped loan originations model which resulted in 50% improvement in model performance and saving 1 million dollars in potential losses
+**B2B Analyst @ Infracommerce (_August 2023 - Present_)**
+- Managed data quality within the B2B E-commerce project
+- Analyzed sales figures and commercial indicators, supported the commercial and customer service team
+- Managed and analyzed data within the VTEX e-commerce platform to improve the online shopping experience
+- Collaborated in the development of effective commercial strategies based on historical and market data
 
-**Data Science Consultant @ Shawhin Talebi Ventures LLC (_December 2020 - Present_)**
-- Conducted data collection, processing, and analysis for novel study evaluating the impact of over 300 biometrics variables on human performance in hyper-realistic, live-fire training scenarios
-- Applied unsupervised deep learning approaches to longitudinal ICU data to discover novel sepsis sub-phenotypes
+**Senior Economist @ Venezuelan-American Chamber of Commerce and Industry (_August 2016 - December 2022_)**
+- Co-author of the Top 100 Companies research (2017 to 2022 Editions) a corporate financial ranking published annually by Business Venezuela Magazine.
+- Used advanced data analysis techniques, including statistical methods and models, to obtain key information and rankings based on total revenue, number of employees, investment, and social investment.
+- Prepared, cleaned, and transformed data to ensure its integrity and accuracy for analysis.
+- Designed engaging data visualizations, using tools such as Tableau or Power BI, to effectively communicate results to interested audiences.
+- Developed dashboards and interactive reports to visualize budget performance, providing practical information for informed decision making.
+- Presented research to stakeholders, with presentations that effectively convey insights and classifications derived from data analysis.
 
 ## Projects
-### Data-Driven EEG Band Discovery with Decision Trees
-[Publication](https://www.mdpi.com/1424-8220/22/8/3048)
+### Impact Analysis of COVID-19 Clusterization: Deaths, Cases, and Vaccinations
+[Project](https://carlos-aizaga.shinyapps.io/appcovidtarea6/)
 
-Developed objective strategy for discovering optimal EEG bands based on signal power spectra using **Python**. This data-driven approach led to better characterization of the underlying power spectrum by identifying bands that outperformed the more commonly used band boundaries by a factor of two. The proposed method provides a fully automated and flexible approach to capturing key signal components and possibly discovering new indices of brain activity.
+Utilized R Studio and the Shiny package to perform a cluster analysis related to COVID-19, studying features such as deaths, cases, and vaccinations.
 
 ![EEG Band Discovery](/assets/img/eeg_band_discovery.jpeg)
 
-### Decoding Physical and Cognitive Impacts of Particulate Matter Concentrations at Ultra-Fine Scales
-[Publication](https://www.mdpi.com/1424-8220/22/11/4240)
+### Impact Analysis COVID-19 Dashboard
+[Project](https://public.tableau.com/app/profile/carlos.aizaga/viz/Covid-19DashboardCMAR/Dashboard1)
 
-Used **Matlab** to train over 100 machine learning models which estimated particulate matter concentrations based on a suite of over 300 biometric variables. We found biometric variables can be used to accurately estimate particulate matter concentrations at ultra-fine spatial scales with high fidelity (r2 = 0.91) and that smaller particles are better estimated than larger ones. Inferring environmental conditions solely from biometric measurements allows us to disentangle key interactions between the environment and the body.
+- Utilized SQL Server for the exploratory analysis and subsequent extraction of information related to the COVID-19 pandemic. 
 
 ![Bike Study](/assets/img/bike_study.jpeg)
 
-## Talks & Lectures
-- Causality: The new science of an old question - GSP Seminar, Fall 2021
-- Guest Lecture: Dimensionality Reduction - Big Data and Machine Learning for Scientific Discovery (PHYS 5336), Spring 2021
-- Guest Lecture: Fourier and Wavelet Transforms - Scientific Computing (PHYS 5315), Fall 2020
-- A Brief Introduction to Optimization - GSP Seminar, Fall 2019
-- Weeks of Welcome Poster Competition - UTD, Fall 2019
-- A Brief Introduction to Networks - GSP Seminar, Spring 2019
+### Sentiment Analysis from Viewpoints
+[Project](https://github.com/caizaga/PortafolioProjects/blob/main/Sentiment_Analisys_BV.ipynb)
+
+- Employed the NLTK (Natural Language Toolkit) package through Python to analyze data in text format, using as input the multiple points of view expressed by our CEO since 2017.
+- Utilized the vader lexicon package, included in NLTK, to separate words associated with positive, negative, and neutral sentiments.
+- Created word clouds with the objective of visually representing positive, negative, and neutral sentiments.
+
+![EEG Band Discovery](/assets/img/eeg_band_discovery.jpeg)  
+
+### Analysis Top 100 Companies Venezuela Dashboard
+[Project](https://public.tableau.com/app/profile/carlos.aizaga/viz/TopCompanies2022/Dashboard1)
+
+- Designed and implemented an interactive Tableau dashboard that showcases comprehensive data on the top 100 companies in Venezuela for the year 2020. The dashboard includes information on rankings, sectors, years in operation, and other relevant metrics.
