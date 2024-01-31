@@ -1,10 +1,10 @@
-# Data Scientist
+# Data Scientist | Economist
 
 #### Technical Skills: Python, SQL, R, Power BI, MS Excel
 
 ## Education							       		
 - Master in Information Systems, mention Data Science	| Pontificia Universidad Católica del Ecuador (_Marzo 2024_)	 			        		
-- Economist | Universidad Central de Venezuela  (April 2015_)
+- Economist | Universidad Central de Venezuela  (_April 2015_)
 
 ## Work Experience
 **B2B Analyst @ Infracommerce (_August 2023 - Present_)**
@@ -25,14 +25,21 @@
 ### Impact Analysis of COVID-19 Clusterization: Deaths, Cases, and Vaccinations
 [Project](https://carlos-aizaga.shinyapps.io/appcovidtarea6/)
 
-Utilized R Studio and the Shiny package to perform a cluster analysis related to COVID-19, studying features such as deaths, cases, and vaccinations.
+Utilized R Studio with Shiny library to perform a cluster analysis related to COVID-19, studying features such as deaths, cases, and vaccinations.
 
 ![EEG Band Discovery](/Assets/R_logo.svg_.webp)
 
 ### Impact Analysis COVID-19 Dashboard
 [Project](https://public.tableau.com/app/profile/carlos.aizaga/viz/Covid-19DashboardCMAR/Dashboard1)
 
-- Utilized SQL Server for the exploratory analysis and subsequent extraction of information related to the COVID-19 pandemic. 
+Utilized SQL Server for the exploratory analysis and subsequent extraction of information related to the COVID-19 pandemic., then 
+
+![Bike Study](/Assets/Tableau-Logo.png)
+
+### Impact Analysis COVID-19 Dashboard
+[Project](https://public.tableau.com/app/profile/carlos.aizaga/viz/Covid-19DashboardCMAR/Dashboard1)
+
+Utilized SQL Server for the exploratory analysis and subsequent extraction of information related to the COVID-19 pandemic. 
 
 ![Bike Study](/Assets/Tableau-Logo.png)
 
@@ -49,3 +56,7 @@ Utilized R Studio and the Shiny package to perform a cluster analysis related to
 [Project](https://public.tableau.com/app/profile/carlos.aizaga/viz/TopCompanies2022/Dashboard1)
 
 - Designed and implemented an interactive Tableau dashboard that showcases comprehensive data on the top 100 companies in Venezuela for the year 2020. The dashboard includes information on rankings, sectors, years in operation, and other relevant metrics.
+
+## Contact info:
+- [LinkedIn](https://www.linkedin.com/in/caizaga/)
+- Adress: Quito, Ecuador
