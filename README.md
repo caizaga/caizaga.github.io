@@ -28,34 +28,40 @@ Utilized R Studio with Shiny library to perform a cluster analysis related to CO
 
 ![R](/Assets/R.png)
 
-### Impact Analysis COVID-19: Dashboard
-[Project](https://public.tableau.com/app/profile/carlos.aizaga/viz/Covid-19DashboardCMAR/Dashboard1)
+[Wiew Project](https://carlos-aizaga.shinyapps.io/appcovidtarea6/)
+
+### [Impact Analysis COVID-19: Dashboard](https://public.tableau.com/app/profile/carlos.aizaga/viz/Covid-19DashboardCMAR/Dashboard1)
 
 Utilized SQL Server for the exploratory analysis and subsequent extraction of information related to the COVID-19 pandemic (link to the [queries](https://github.com/caizaga/PortafolioProjects/blob/main/Portfolio%20Project%20SQL%20Server%20EDA.sql) in SQL), then utilized Tableau to create a interactive dashboard
 
 ![T1](/Assets/T1.png)
- 
-### Nashville Housing Data Cleaning 
-[Project](https://github.com/caizaga/PortafolioProjects/blob/main/Portfolio%20Project%20SQL%20Server%20Cleaning%20Data.sql)
+
+[Wiew Project](https://public.tableau.com/app/profile/carlos.aizaga/viz/Covid-19DashboardCMAR/Dashboard1)
+
+### [Nashville Housing Data Cleaning](https://github.com/caizaga/PortafolioProjects/blob/main/Portfolio%20Project%20SQL%20Server%20Cleaning%20Data.sql)
 
 Utilized SQL Server for the exploratory analysis and subsequent extraction of information related to the prices of houses in Nashville, TN 
 
 ![S1](/Assets/S1.png)
 
-### Sentiment Analysis from Viewpoints
-[Project](https://github.com/caizaga/PortafolioProjects/blob/main/Sentiment_Analisys_BV.ipynb)
+[Wiew Project](https://github.com/caizaga/PortafolioProjects/blob/main/Portfolio%20Project%20SQL%20Server%20Cleaning%20Data.sql)
+
+### [Sentiment Analysis from Viewpoints](https://github.com/caizaga/PortafolioProjects/blob/main/Sentiment_Analisys_BV.ipynb)
 
 Utilized the NLTK (Natural Language Toolkit) package through Python to analyze data in text format, using as input the multiple points of view expressed by our CEO since 2017. Utilized the vader lexicon package, included in NLTK, to separate words associated with positive, negative, and neutral sentiments. Created word clouds with the objective of visually representing positive, negative, and neutral sentiments.
 
 ![P1](/Assets/P1.png)  
 
-### Analysis Top 100 Companies Venezuela Dashboard
-[Project](https://public.tableau.com/app/profile/carlos.aizaga/viz/TopCompanies2022/Dashboard1)
+[Wiew Project](https://github.com/caizaga/PortafolioProjects/blob/main/Sentiment_Analisys_BV.ipynb)
+
+### [Analysis Top 100 Companies Venezuela Dashboard](https://public.tableau.com/app/profile/carlos.aizaga/viz/TopCompanies2022/Dashboard1)
 
 Designed and implemented an interactive Tableau dashboard that showcases comprehensive data on the top 100 companies in Venezuela for the year 2020. The dashboard includes information on rankings, sectors, years in operation, and other relevant metrics.
 
 ![T2](/Assets/T2.png)  
 
+[Wiew Project](https://public.tableau.com/app/profile/carlos.aizaga/viz/TopCompanies2022/Dashboard1)
+
 ## Contact info:
 - [LinkedIn](https://www.linkedin.com/in/caizaga/)
-- Adress: Quito, Ecuador
+- Quito, Ecuador
