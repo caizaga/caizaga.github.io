@@ -28,7 +28,7 @@ Utilized R Studio with Shiny library to perform a cluster analysis related to CO
 
 ![R](/Assets/R.png)
 
-[Wiew Project](https://carlos-aizaga.shinyapps.io/appcovidtarea6/)
+[View Project](https://carlos-aizaga.shinyapps.io/appcovidtarea6/)
 
 ### [Impact Analysis COVID-19: Dashboard](https://public.tableau.com/app/profile/carlos.aizaga/viz/Covid-19DashboardCMAR/Dashboard1)
 
@@ -36,7 +36,7 @@ Utilized SQL Server for the exploratory analysis and subsequent extraction of in
 
 ![T1](/Assets/T1.png)
 
-[Wiew Project](https://public.tableau.com/app/profile/carlos.aizaga/viz/Covid-19DashboardCMAR/Dashboard1)
+[View Project](https://public.tableau.com/app/profile/carlos.aizaga/viz/Covid-19DashboardCMAR/Dashboard1)
 
 ### [Nashville Housing Data Cleaning](https://github.com/caizaga/PortafolioProjects/blob/main/Portfolio%20Project%20SQL%20Server%20Cleaning%20Data.sql)
 
@@ -44,7 +44,7 @@ Utilized SQL Server for the exploratory analysis and subsequent extraction of in
 
 ![S1](/Assets/S1.png)
 
-[Wiew Project](https://github.com/caizaga/PortafolioProjects/blob/main/Portfolio%20Project%20SQL%20Server%20Cleaning%20Data.sql)
+[View Project](https://github.com/caizaga/PortafolioProjects/blob/main/Portfolio%20Project%20SQL%20Server%20Cleaning%20Data.sql)
 
 ### [Sentiment Analysis from Viewpoints](https://github.com/caizaga/PortafolioProjects/blob/main/Sentiment_Analisys_BV.ipynb)
 
@@ -52,7 +52,7 @@ Utilized the NLTK (Natural Language Toolkit) package through Python to analyze d
 
 ![P1](/Assets/P1.png)  
 
-[Wiew Project](https://github.com/caizaga/PortafolioProjects/blob/main/Sentiment_Analisys_BV.ipynb)
+[View Project](https://github.com/caizaga/PortafolioProjects/blob/main/Sentiment_Analisys_BV.ipynb)
 
 ### [Analysis Top 100 Companies Venezuela Dashboard](https://public.tableau.com/app/profile/carlos.aizaga/viz/TopCompanies2022/Dashboard1)
 
@@ -60,7 +60,7 @@ Designed and implemented an interactive Tableau dashboard that showcases compreh
 
 ![T2](/Assets/T2.png)  
 
-[Wiew Project](https://public.tableau.com/app/profile/carlos.aizaga/viz/TopCompanies2022/Dashboard1)
+[View Project](https://public.tableau.com/app/profile/carlos.aizaga/viz/TopCompanies2022/Dashboard1)
 
 ## Contact info:
 - [LinkedIn](https://www.linkedin.com/in/caizaga/)
