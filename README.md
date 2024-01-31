@@ -22,8 +22,7 @@
 - Presented research to stakeholders, with presentations that effectively convey insights and classifications derived from data analysis.
 
 ## Projects
-### Impact Analysis of COVID-19 Clusterization: Deaths, Cases, and Vaccinations
-[Project](https://carlos-aizaga.shinyapps.io/appcovidtarea6/)
+### [Impact Analysis of COVID-19 Clusterization: Deaths, Cases, and Vaccinations](https://carlos-aizaga.shinyapps.io/appcovidtarea6/)
 
 Utilized R Studio with Shiny library to perform a cluster analysis related to COVID-19, studying features such as deaths, cases, and vaccinations.
 
