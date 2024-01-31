@@ -29,33 +29,31 @@ Utilized R Studio with Shiny library to perform a cluster analysis related to CO
 
 ![EEG Band Discovery](/Assets/R_logo.svg_.webp)
 
-### Impact Analysis COVID-19 Dashboard
+### Impact Analysis COVID-19: Dashboard
 [Project](https://public.tableau.com/app/profile/carlos.aizaga/viz/Covid-19DashboardCMAR/Dashboard1)
 
-Utilized SQL Server for the exploratory analysis and subsequent extraction of information related to the COVID-19 pandemic., then 
+Utilized SQL Server for the exploratory analysis and subsequent extraction of information related to the COVID-19 pandemic (link to the [queries](https://github.com/caizaga/PortafolioProjects/blob/main/Portfolio%20Project%20SQL%20Server%20EDA.sql) in SQL), then utilized Tableau to create a interactive dashboard
 
 ![Bike Study](/Assets/Tableau-Logo.png)
+ 
+### Nashville Housing Data Cleaning 
+[Project](https://github.com/caizaga/PortafolioProjects/blob/main/Portfolio%20Project%20SQL%20Server%20Cleaning%20Data.sql)
 
-### Impact Analysis COVID-19 Dashboard
-[Project](https://public.tableau.com/app/profile/carlos.aizaga/viz/Covid-19DashboardCMAR/Dashboard1)
-
-Utilized SQL Server for the exploratory analysis and subsequent extraction of information related to the COVID-19 pandemic. 
+Utilized SQL Server for the exploratory analysis and subsequent extraction of information related to the prices of houses in Nashville, TN 
 
 ![Bike Study](/Assets/Tableau-Logo.png)
 
 ### Sentiment Analysis from Viewpoints
 [Project](https://github.com/caizaga/PortafolioProjects/blob/main/Sentiment_Analisys_BV.ipynb)
 
-- Employed the NLTK (Natural Language Toolkit) package through Python to analyze data in text format, using as input the multiple points of view expressed by our CEO since 2017.
-- Utilized the vader lexicon package, included in NLTK, to separate words associated with positive, negative, and neutral sentiments.
-- Created word clouds with the objective of visually representing positive, negative, and neutral sentiments.
+Utilized the NLTK (Natural Language Toolkit) package through Python to analyze data in text format, using as input the multiple points of view expressed by our CEO since 2017. Utilized the vader lexicon package, included in NLTK, to separate words associated with positive, negative, and neutral sentiments. Created word clouds with the objective of visually representing positive, negative, and neutral sentiments.
 
 ![EEG Band Discovery](/Assets/python-logo-2.png)  
 
 ### Analysis Top 100 Companies Venezuela Dashboard
 [Project](https://public.tableau.com/app/profile/carlos.aizaga/viz/TopCompanies2022/Dashboard1)
 
-- Designed and implemented an interactive Tableau dashboard that showcases comprehensive data on the top 100 companies in Venezuela for the year 2020. The dashboard includes information on rankings, sectors, years in operation, and other relevant metrics.
+Designed and implemented an interactive Tableau dashboard that showcases comprehensive data on the top 100 companies in Venezuela for the year 2020. The dashboard includes information on rankings, sectors, years in operation, and other relevant metrics.
 
 ## Contact info:
 - [LinkedIn](https://www.linkedin.com/in/caizaga/)
