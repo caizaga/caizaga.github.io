@@ -293,3 +293,26 @@ const skillObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.3 });
 
 skillFills.forEach(fill => skillObserver.observe(fill));
+
+// ===========================
+// Easter egg — Nuclear Throne
+// ===========================
+const ntToast = document.getElementById('nt-toast');
+const ntSequence = 'throne';
+let ntBuffer = '';
+let ntTimer = null;
+
+document.addEventListener('keydown', (e) => {
+  if (e.ctrlKey || e.altKey || e.metaKey) return;
+  ntBuffer += e.key.toLowerCase();
+  if (ntBuffer.length > ntSequence.length) ntBuffer = ntBuffer.slice(-ntSequence.length);
+
+  clearTimeout(ntTimer);
+  ntTimer = setTimeout(() => { ntBuffer = ''; }, 1500);
+
+  if (ntBuffer === ntSequence) {
+    ntBuffer = '';
+    ntToast.classList.add('show');
+    setTimeout(() => ntToast.classList.remove('show'), 4000);
+  }
+});
