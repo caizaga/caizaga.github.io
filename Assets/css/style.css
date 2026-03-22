@@ -5,9 +5,9 @@
   --bg: #0d1117;
   --surface: #161b22;
   --surface-2: #1c2333;
-  --accent: #00d4ff;
-  --accent-dim: rgba(0, 212, 255, 0.12);
-  --accent-glow: rgba(0, 212, 255, 0.3);
+  --accent: #4ade80;
+  --accent-dim: rgba(74, 222, 128, 0.12);
+  --accent-glow: rgba(74, 222, 128, 0.3);
   --text: #e6edf3;
   --muted: #8b949e;
   --border: rgba(255, 255, 255, 0.08);
@@ -151,7 +151,7 @@ img { max-width: 100%; display: block; }
   display: inline-block;
   background: var(--accent-dim);
   color: var(--accent);
-  border: 1px solid rgba(0, 212, 255, 0.2);
+  border: 1px solid rgba(74, 222, 128, 0.2);
   padding: 3px 10px;
   border-radius: 4px;
   font-family: var(--font-mono);
@@ -160,8 +160,8 @@ img { max-width: 100%; display: block; }
 }
 
 .accent-tag {
-  background: rgba(0, 212, 255, 0.2);
-  border-color: rgba(0, 212, 255, 0.45);
+  background: rgba(74, 222, 128, 0.2);
+  border-color: rgba(74, 222, 128, 0.45);
 }
 
 /* ===========================
@@ -281,7 +281,7 @@ img { max-width: 100%; display: block; }
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(circle, rgba(0, 212, 255, 0.07) 1px, transparent 1px);
+  background-image: radial-gradient(circle, rgba(74, 222, 128, 0.07) 1px, transparent 1px);
   background-size: 36px 36px;
   opacity: 0.7;
   animation: bgFloat 18s ease-in-out infinite;
@@ -292,8 +292,8 @@ img { max-width: 100%; display: block; }
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 65% 50%, rgba(0, 212, 255, 0.06) 0%, transparent 60%),
-    radial-gradient(ellipse at 10% 90%, rgba(0, 212, 255, 0.03) 0%, transparent 45%),
+    radial-gradient(ellipse at 65% 50%, rgba(74, 222, 128, 0.06) 0%, transparent 60%),
+    radial-gradient(ellipse at 10% 90%, rgba(74, 222, 128, 0.03) 0%, transparent 45%),
     linear-gradient(to bottom, transparent 70%, var(--bg));
 }
 
@@ -377,12 +377,12 @@ img { max-width: 100%; display: block; }
   width: clamp(260px, 32vw, 360px);
   height: clamp(260px, 32vw, 360px);
   border-radius: 50%;
-  border: 3px solid rgba(0, 212, 255, 0.5);
+  border: 3px solid rgba(74, 222, 128, 0.5);
   padding: 6px;
   box-shadow:
-    0 0 60px rgba(0, 212, 255, 0.2),
-    0 0 120px rgba(0, 212, 255, 0.08),
-    inset 0 0 30px rgba(0, 212, 255, 0.04);
+    0 0 60px rgba(74, 222, 128, 0.2),
+    0 0 120px rgba(74, 222, 128, 0.08),
+    inset 0 0 30px rgba(74, 222, 128, 0.04);
   animation: photoPulse 4s ease-in-out infinite;
   background: var(--surface);
 }
@@ -396,12 +396,12 @@ img { max-width: 100%; display: block; }
 
 @keyframes photoPulse {
   0%, 100% {
-    box-shadow: 0 0 40px rgba(0, 212, 255, 0.15), 0 0 80px rgba(0, 212, 255, 0.06);
-    border-color: rgba(0, 212, 255, 0.4);
+    box-shadow: 0 0 40px rgba(74, 222, 128, 0.15), 0 0 80px rgba(74, 222, 128, 0.06);
+    border-color: rgba(74, 222, 128, 0.4);
   }
   50% {
-    box-shadow: 0 0 80px rgba(0, 212, 255, 0.35), 0 0 140px rgba(0, 212, 255, 0.12);
-    border-color: rgba(0, 212, 255, 0.8);
+    box-shadow: 0 0 80px rgba(74, 222, 128, 0.35), 0 0 140px rgba(74, 222, 128, 0.12);
+    border-color: rgba(74, 222, 128, 0.8);
   }
 }
 
@@ -512,7 +512,7 @@ img { max-width: 100%; display: block; }
 }
 
 .skill-card:hover {
-  border-color: rgba(0, 212, 255, 0.3);
+  border-color: rgba(74, 222, 128, 0.3);
   box-shadow: 0 0 28px var(--accent-dim);
 }
 
@@ -564,7 +564,7 @@ img { max-width: 100%; display: block; }
 
 .skill-fill {
   height: 100%;
-  background: linear-gradient(90deg, var(--accent), rgba(0, 212, 255, 0.55));
+  background: linear-gradient(90deg, var(--accent), rgba(74, 222, 128, 0.55));
   border-radius: 4px;
   width: 0%;
   transition: width 1.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -622,7 +622,7 @@ img { max-width: 100%; display: block; }
 }
 
 .timeline-content:hover {
-  border-color: rgba(0, 212, 255, 0.25);
+  border-color: rgba(74, 222, 128, 0.25);
 }
 
 .timeline-meta {
@@ -648,7 +648,7 @@ img { max-width: 100%; display: block; }
   padding: 4px 10px;
   border-radius: 4px;
   flex-shrink: 0;
-  border: 1px solid rgba(0, 212, 255, 0.2);
+  border: 1px solid rgba(74, 222, 128, 0.2);
 }
 
 .timeline-company {
@@ -715,7 +715,7 @@ img { max-width: 100%; display: block; }
 }
 
 .edu-card:hover {
-  border-color: rgba(0, 212, 255, 0.3);
+  border-color: rgba(74, 222, 128, 0.3);
   transform: translateY(-4px);
 }
 
@@ -730,7 +730,7 @@ img { max-width: 100%; display: block; }
   margin-bottom: 18px;
   font-size: 1.3rem;
   color: var(--accent);
-  border: 1px solid rgba(0, 212, 255, 0.2);
+  border: 1px solid rgba(74, 222, 128, 0.2);
 }
 
 .edu-badge {
@@ -742,7 +742,7 @@ img { max-width: 100%; display: block; }
   padding: 3px 10px;
   border-radius: 4px;
   margin-bottom: 14px;
-  border: 1px solid rgba(0, 212, 255, 0.2);
+  border: 1px solid rgba(74, 222, 128, 0.2);
   letter-spacing: 0.04em;
 }
 
@@ -793,7 +793,7 @@ img { max-width: 100%; display: block; }
 }
 
 .project-card:hover {
-  border-color: rgba(0, 212, 255, 0.3);
+  border-color: rgba(74, 222, 128, 0.3);
   transform: translateY(-6px);
   box-shadow: 0 20px 48px rgba(0, 0, 0, 0.45);
 }
@@ -871,12 +871,12 @@ img { max-width: 100%; display: block; }
 
 /* Coming Soon card */
 .project-coming {
-  border: 2px dashed rgba(0, 212, 255, 0.2);
+  border: 2px dashed rgba(74, 222, 128, 0.2);
   background: rgba(13, 17, 23, 0.5);
 }
 
 .project-coming:hover {
-  border-color: rgba(0, 212, 255, 0.45);
+  border-color: rgba(74, 222, 128, 0.45);
   transform: translateY(-4px);
 }
 
@@ -899,13 +899,13 @@ img { max-width: 100%; display: block; }
   justify-content: center;
   font-size: 1.8rem;
   color: var(--accent);
-  border: 1px solid rgba(0, 212, 255, 0.2);
+  border: 1px solid rgba(74, 222, 128, 0.2);
 }
 
 .coming-badge {
-  background: rgba(0, 212, 255, 0.1);
+  background: rgba(74, 222, 128, 0.1);
   color: var(--accent);
-  border: 1px solid rgba(0, 212, 255, 0.3);
+  border: 1px solid rgba(74, 222, 128, 0.3);
   font-family: var(--font-mono);
   font-size: 0.75rem;
   padding: 4px 14px;
@@ -957,7 +957,7 @@ img { max-width: 100%; display: block; }
 }
 
 a.contact-item:hover {
-  border-color: rgba(0, 212, 255, 0.3);
+  border-color: rgba(74, 222, 128, 0.3);
   transform: translateX(5px);
 }
 
@@ -972,7 +972,7 @@ a.contact-item:hover {
   font-size: 1.1rem;
   color: var(--accent);
   flex-shrink: 0;
-  border: 1px solid rgba(0, 212, 255, 0.2);
+  border: 1px solid rgba(74, 222, 128, 0.2);
 }
 
 .contact-detail {
