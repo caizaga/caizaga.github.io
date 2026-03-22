@@ -14,7 +14,6 @@ AOS.init({
 new Typed('#typed-output', {
   strings: [
     'Quantitative Economist',
-    'Data Scientist',
     'Applied Econometrician',
     'Socioeconomic Analyst',
   ],
