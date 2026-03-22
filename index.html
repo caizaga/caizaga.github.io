@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Carlos Aizaga — Quantitative Economist & Data Scientist specializing in econometrics, socioeconomic analysis, and data pipelines.">
+  <title>Carlos Aizaga | Quantitative Economist & Data Scientist</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">CA</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-sm nav-cta">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-container">
+      <div class="hero-text" data-aos="fade-right" data-aos-duration="800">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">Carlos Aizaga</h1>
+        <div class="hero-typed-wrapper">
+          <span id="typed-output"></span>
+        </div>
+        <p class="hero-tagline">
+          Economist with M.Sc. in Data Science and 7+ years applying rigorous quantitative methods
+          to socioeconomic challenges — from field survey design and econometric modeling to
+          automated ETL pipelines and interactive BI dashboards.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="Assets/CV_CARLOS_AIZAGA_.pdf" class="btn btn-outline" download>
+            <i class="fa-solid fa-download"></i> Download CV
+          </a>
+        </div>
+      </div>
+      <div class="hero-photo" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+        <div class="photo-frame">
+          <img src="Assets/Foto_Logo%20(1).png" alt="Carlos Aizaga">
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll to about section">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-number">01</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-photo-col" data-aos="fade-right" data-aos-delay="100">
+          <div class="about-photo-frame">
+            <img src="Assets/Foto_Logo%20(1).png" alt="Carlos Aizaga">
+          </div>
+        </div>
+        <div class="about-content" data-aos="fade-left" data-aos-delay="200">
+          <p class="about-bio">
+            I bridge the gap between economic theory and modern data science — transforming complex
+            socioeconomic data into clear, actionable insights. With a background in Economics and a
+            Master's in Data Science, I specialize in quantitative research methodologies, econometric
+            modeling, and survey design applied to development, labor markets, and business contexts.
+          </p>
+          <p class="about-bio">
+            Currently, I work as a Data Economist at Strattos, designing automated ETL pipelines and
+            predictive models for development projects across Latin America. I also teach Strategic
+            Economics at Universidad Israel, bridging academic rigor with practical data analysis.
+          </p>
+          <div class="about-stats">
+            <div class="stat" data-aos="zoom-in" data-aos-delay="300">
+              <div class="stat-value">
+                <span class="stat-number" data-target="7">0</span><span class="stat-suffix">+</span>
+              </div>
+              <p class="stat-label">Years Experience</p>
+            </div>
+            <div class="stat" data-aos="zoom-in" data-aos-delay="400">
+              <div class="stat-value">
+                <span class="stat-number" data-target="3">0</span>
+              </div>
+              <p class="stat-label">Featured Projects</p>
+            </div>
+            <div class="stat" data-aos="zoom-in" data-aos-delay="500">
+              <div class="stat-value">
+                <span class="stat-number" data-target="2">0</span>
+              </div>
+              <p class="stat-label">Graduate Degrees</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-number">02</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="skills-grid">
+
+        <!-- Card 1: Econometrics & Quant Methods -->
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="skill-card-header">
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Econometrics &amp; Quant Methods</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-item">
+              <div class="skill-label"><span>Regression &amp; Panel Data</span><span>85%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>Survey Design</span><span>80%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>Statistical Inference</span><span>80%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>Applied Mathematics</span><span>75%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Programming -->
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-card-header">
+            <i class="fa-solid fa-code"></i>
+            <h3>Programming</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-item">
+              <div class="skill-label"><span>Python</span><span>85%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>SQL</span><span>80%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>R</span><span>70%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>PySpark</span><span>60%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="60"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: BI & Visualization -->
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-card-header">
+            <i class="fa-solid fa-chart-bar"></i>
+            <h3>BI &amp; Visualization</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-item">
+              <div class="skill-label"><span>Power BI</span><span>80%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>Tableau</span><span>75%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>Looker Studio</span><span>70%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Big Data & Field Research -->
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="skill-card-header">
+            <i class="fa-solid fa-database"></i>
+            <h3>Big Data &amp; Field Research</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-item">
+              <div class="skill-label"><span>KoboToolbox / ODK</span><span>80%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>BigQuery / GCP</span><span>75%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>Hadoop / PySpark</span><span>60%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="60"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Skill Tags -->
+      <div class="skill-tags" data-aos="fade-up" data-aos-delay="100">
+        <span class="tag">scikit-learn</span>
+        <span class="tag">TensorFlow</span>
+        <span class="tag">pandas</span>
+        <span class="tag">NumPy</span>
+        <span class="tag">ggplot2</span>
+        <span class="tag">dplyr</span>
+        <span class="tag">DAX</span>
+        <span class="tag">Power Query</span>
+        <span class="tag">Git</span>
+        <span class="tag">KoboToolbox</span>
+        <span class="tag">ODK</span>
+        <span class="tag">Fastfield</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="0">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <h3 class="timeline-role">Data Economist / Associate Consultant</h3>
+              <span class="timeline-date">Aug 2024 – Present</span>
+            </div>
+            <p class="timeline-company"><i class="fa-solid fa-building"></i> Strattos · Antroproyectos Latinoamérica &mdash; Quito, Ecuador</p>
+            <ul class="timeline-bullets">
+              <li>Designs automated ETL routines and quality control protocols in BigQuery for development surveys and censuses across Latin America, integrating GPS validation and quota monitoring.</li>
+              <li>Builds econometric and predictive models in Python (pandas, scikit-learn) to support evidence-based decision-making in social development projects.</li>
+              <li>Develops interactive BI dashboards in Power BI and Looker Studio for field data monitoring, reporting, and stakeholder communication.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">Python</span>
+              <span class="tag">BigQuery</span>
+              <span class="tag">Power BI</span>
+              <span class="tag">KoboToolbox</span>
+              <span class="tag">Econometrics</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <h3 class="timeline-role">Part-time Professor</h3>
+              <span class="timeline-date">Oct 2025 – Present</span>
+            </div>
+            <p class="timeline-company"><i class="fa-solid fa-building-columns"></i> Universidad Israel &mdash; Quito, Ecuador</p>
+            <ul class="timeline-bullets">
+              <li>Teaches Strategic Economics and Administration &amp; Marketing, integrating quantitative tools and case-based applied learning.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">Applied Economics</span>
+              <span class="tag">Quantitative Methods</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <h3 class="timeline-role">B2B Data Analyst</h3>
+              <span class="timeline-date">Aug 2023 – Jul 2024</span>
+            </div>
+            <p class="timeline-company"><i class="fa-solid fa-building"></i> Infracommerce Latam &mdash; Quito, Ecuador</p>
+            <ul class="timeline-bullets">
+              <li>Managed data quality within a B2B e-commerce platform (VTEX) for a multinational food company.</li>
+              <li>Analyzed large-scale sales and marketing KPIs, supporting commercial strategy and customer service decisions.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">SQL</span>
+              <span class="tag">Power BI</span>
+              <span class="tag">E-Commerce Analytics</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <h3 class="timeline-role">Senior Economist</h3>
+              <span class="timeline-date">Aug 2016 – Dec 2022</span>
+            </div>
+            <p class="timeline-company"><i class="fa-solid fa-building"></i> Cámara Venezolano-Americana de Comercio e Industria (VenAmCham)</p>
+            <ul class="timeline-bullets">
+              <li>Co-authored the <em>Top 100 Companies</em> research across 6 consecutive editions (2017–2022), applying econometric ranking methodologies to revenue, employment, investment, and social impact data — published annually in <em>Business Venezuela Magazine</em>.</li>
+              <li>Designed interactive Tableau and Power BI dashboards to communicate complex economic findings to C-level stakeholders and the business community.</li>
+              <li>Authored 20+ articles on economic and technology topics; conducted statistical analysis, survey design, and stakeholder-facing presentations for institutional research projects.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">Tableau</span>
+              <span class="tag">Power BI</span>
+              <span class="tag">Econometrics</span>
+              <span class="tag">R</span>
+              <span class="tag">Research</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-number">04</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="edu-grid">
+
+        <div class="edu-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="edu-icon-wrap">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <span class="edu-badge">Master's Degree</span>
+          <h3>M.Sc. Information Systems — Data Science</h3>
+          <p class="edu-school">Pontificia Universidad Católica del Ecuador</p>
+          <p class="edu-date"><i class="fa-regular fa-calendar"></i> April 2024</p>
+          <div class="edu-coursework">
+            <span class="tag">Applied Statistics</span>
+            <span class="tag">Python / R</span>
+            <span class="tag">SQL &amp; Databases</span>
+            <span class="tag">PySpark / Hadoop</span>
+          </div>
+        </div>
+
+        <div class="edu-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="edu-icon-wrap">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <span class="edu-badge">Bachelor's Degree</span>
+          <h3>Economist Degree</h3>
+          <p class="edu-school">Universidad Central de Venezuela</p>
+          <p class="edu-date"><i class="fa-regular fa-calendar"></i> April 2015</p>
+          <div class="edu-coursework">
+            <span class="tag">Econometrics</span>
+            <span class="tag">Applied Statistics</span>
+            <span class="tag">Advanced Mathematics</span>
+            <span class="tag">Micro / Macro</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-number">05</span>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">A curated selection of quantitative &amp; data science work</p>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1: COVID Cluster Analysis -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="project-image">
+            <img src="Assets/R.png" alt="COVID-19 Cluster Analysis">
+            <div class="project-overlay">
+              <a href="https://carlos-aizaga.shinyapps.io/appcovidtarea6/" class="btn btn-sm btn-primary" target="_blank" rel="noopener">View Live &nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>COVID-19 Cluster Analysis</h3>
+            <p>Applied unsupervised machine learning (k-means clustering) to group countries by COVID-19 outcomes — deaths, cases, and vaccination rates — revealing geopolitical and socioeconomic patterns in pandemic response.</p>
+            <div class="project-tags">
+              <span class="tag accent-tag">R</span>
+              <span class="tag accent-tag">Shiny</span>
+              <span class="tag">Unsupervised ML</span>
+              <span class="tag">Public Health Data</span>
+            </div>
+            <a href="https://carlos-aizaga.shinyapps.io/appcovidtarea6/" class="project-link" target="_blank" rel="noopener">
+              View Project <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: Sentiment Analysis -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="project-image">
+            <img src="Assets/P1.png" alt="Sentiment Analysis CEO Viewpoints">
+            <div class="project-overlay">
+              <a href="https://github.com/caizaga/PortafolioProjects/blob/main/Sentiment_Analisys_BV.ipynb" class="btn btn-sm btn-primary" target="_blank" rel="noopener">View Code &nbsp;<i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Sentiment Analysis — CEO Viewpoints</h3>
+            <p>NLP-driven analysis of 5+ years of corporate communications from a CEO. Used VADER lexicon (NLTK) to quantify positive, negative, and neutral sentiment trends over time, generating word clouds and longitudinal visualizations.</p>
+            <div class="project-tags">
+              <span class="tag accent-tag">Python</span>
+              <span class="tag accent-tag">NLTK</span>
+              <span class="tag">NLP</span>
+              <span class="tag">Text Analytics</span>
+            </div>
+            <a href="https://github.com/caizaga/PortafolioProjects/blob/main/Sentiment_Analisys_BV.ipynb" class="project-link" target="_blank" rel="noopener">
+              View Project <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: Top 100 Companies Venezuela -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-image">
+            <img src="Assets/T2.png" alt="Top 100 Companies Venezuela">
+            <div class="project-overlay">
+              <a href="https://public.tableau.com/app/profile/carlos.aizaga/viz/TopCompanies2022/Dashboard1" class="btn btn-sm btn-primary" target="_blank" rel="noopener">View Dashboard &nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Top 100 Companies Venezuela</h3>
+            <p>Annual econometric corporate ranking published across 6 consecutive editions (2017–2022) in <em>Business Venezuela Magazine</em>. Ranking methodology based on revenue, employment, investment, and social impact — visualized in an interactive Tableau dashboard.</p>
+            <div class="project-tags">
+              <span class="tag accent-tag">Tableau</span>
+              <span class="tag accent-tag">Econometrics</span>
+              <span class="tag">Power BI</span>
+              <span class="tag">Corporate Finance</span>
+            </div>
+            <a href="https://public.tableau.com/app/profile/carlos.aizaga/viz/TopCompanies2022/Dashboard1" class="project-link" target="_blank" rel="noopener">
+              View Project <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4: Coming Soon -->
+        <div class="project-card project-coming" data-aos="fade-up" data-aos-delay="450">
+          <div class="coming-soon">
+            <div class="coming-icon">
+              <i class="fa-solid fa-code-branch"></i>
+            </div>
+            <span class="coming-badge">In Development</span>
+            <h3>Econometric Pipeline Project</h3>
+            <p>End-to-end data pipeline for socioeconomic survey collection, automated ETL cleaning, econometric modeling, and interactive BI visualization. Built with Python, BigQuery, and Power BI.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">BigQuery</span>
+              <span class="tag">ETL</span>
+              <span class="tag">Econometrics</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-number">06</span>
+        <h2 class="section-title">Let's Work Together</h2>
+      </div>
+      <div class="contact-wrapper" data-aos="fade-up" data-aos-delay="100">
+        <p class="contact-intro">
+          Available for consulting projects, research collaborations, and full-time roles in
+          quantitative analysis, applied econometrics, and data science.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:caizaga.115@gmail.com" class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-detail">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">caizaga.115@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/caizaga/" class="contact-item" target="_blank" rel="noopener">
+            <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+            <div class="contact-detail">
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">linkedin.com/in/caizaga</span>
+            </div>
+          </a>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-detail">
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Quito, Ecuador</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <p class="footer-text">© 2026 Carlos Aizaga · Quantitative Economist &amp; Data Scientist</p>
+      <p class="footer-sub">Built with HTML, CSS &amp; JS · Hosted on GitHub Pages</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="Assets/js/main.js"></script>
+
+</body>
+</html>
