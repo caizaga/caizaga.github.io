@@ -242,6 +242,9 @@
             <span class="tag">Power BI</span>
             <span class="tag">GCP</span>
           </div>
+          <div class="featured-actions">
+            <button class="btn btn-sm btn-primary modal-trigger" data-project="pipeline">Details &nbsp;<i class="fa-solid fa-expand"></i></button>
+          </div>
         </div>
       </div>
 
@@ -462,8 +465,15 @@
       <button class="modal-close" id="modal-close" aria-label="Close modal">
         <i class="fa-solid fa-xmark"></i>
       </button>
-      <div class="modal-image">
-        <img id="modal-img" src="" alt="">
+      <div class="modal-carousel">
+        <div class="carousel-track" id="carousel-track"></div>
+        <button class="carousel-btn carousel-prev" id="carousel-prev" aria-label="Previous image">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="carousel-btn carousel-next" id="carousel-next" aria-label="Next image">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <div class="carousel-dots" id="carousel-dots"></div>
       </div>
       <div class="modal-body">
         <h3 id="modal-title"></h3>

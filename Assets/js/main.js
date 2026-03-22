@@ -107,7 +107,7 @@ counters.forEach(counter => counterObserver.observe(counter));
 const projectData = {
   'covid-cluster': {
     title: 'COVID-19 Cluster Analysis',
-    image: 'Assets/R.png',
+    images: ['Assets/R.png'],
     description: 'Comprehensive study applying unsupervised machine learning to understand global disparities in COVID-19 outcomes. The goal was to identify country clusters sharing similar pandemic trajectories and uncover the socioeconomic and geopolitical factors behind those patterns.',
     methodology: 'K-means clustering with feature normalization across four variables: total deaths per million, confirmed cases per million, vaccination rate, and government stringency index. Used the elbow method and silhouette scores to determine the optimal number of clusters (k=4). Built as an interactive R Shiny app allowing users to explore cluster assignments dynamically by region and time period.',
     results: [
@@ -122,7 +122,7 @@ const projectData = {
   },
   'sentiment': {
     title: 'Sentiment Analysis — CEO Viewpoints',
-    image: 'Assets/P1.png',
+    images: ['Assets/P1.png'],
     description: 'Longitudinal NLP analysis of 5+ years of corporate communications from a CEO, with the objective of quantifying shifts in organizational tone and identifying periods of strategic optimism or concern.',
     methodology: 'Text preprocessing pipeline: tokenization, stopword removal, and lemmatization. Applied VADER (Valence Aware Dictionary and sEntiment Reasoner) from the NLTK library — specifically calibrated for informal and corporate text. Generated compound sentiment scores per document aggregated by quarter. Word clouds segmented by positive, negative, and neutral polarity to identify dominant vocabulary in each category.',
     results: [
@@ -137,7 +137,7 @@ const projectData = {
   },
   'top100': {
     title: 'Top 100 Companies Venezuela',
-    image: 'Assets/T2.png',
+    images: ['Assets/T2.png'],
     description: 'Annual econometric corporate ranking of Venezuela\'s top 100 corporations, published across 6 consecutive editions (2017–2022) in Business Venezuela Magazine. The project combined rigorous quantitative methodology with interactive data visualization to communicate complex financial rankings to a broad business audience.',
     methodology: 'Multi-criteria composite index built on four dimensions: total revenue, number of employees, capital investment, and social investment. Each dimension normalized using z-score standardization. Relative weights determined via Principal Component Analysis (PCA). Data collected through structured corporate surveys with validation protocols.',
     results: [
@@ -149,8 +149,79 @@ const projectData = {
     tags: ['Tableau', 'Power BI', 'Econometrics', 'PCA', 'Corporate Finance', 'Survey Design'],
     link: 'https://public.tableau.com/app/profile/carlos.aizaga/viz/TopCompanies2022/Dashboard1',
     linkText: 'View Dashboard'
+  },
+  'pipeline': {
+    title: 'Econometric Pipeline Project',
+    images: ['Assets/R.png', 'Assets/P1.png', 'Assets/T2.png'],
+    description: 'End-to-end data pipeline for socioeconomic survey collection, automated ETL cleaning, econometric modeling, and interactive BI visualization. This project integrates field research methodology with modern cloud infrastructure to produce reproducible, publication-ready analysis.',
+    methodology: '[Placeholder] Survey design using KoboToolbox → automated ETL pipeline in Python with data validation and cleaning → econometric modeling (OLS, panel data, instrumental variables) in Python/R → results published to interactive Power BI dashboard hosted on GCP. Full pipeline orchestrated via scheduled Cloud Functions.',
+    results: [
+      '[Placeholder] Automated ingestion of 1,000+ survey responses with zero manual intervention.',
+      '[Placeholder] Econometric model identifying key socioeconomic determinants with statistically significant results.',
+      '[Placeholder] Interactive dashboard enabling real-time exploration of model outputs by stakeholders.',
+      '[Placeholder] Pipeline reduces time-to-insight from weeks to hours compared to previous manual workflow.'
+    ],
+    tags: ['Python', 'BigQuery', 'Econometrics', 'ETL', 'Power BI', 'GCP', 'KoboToolbox'],
+    link: '#contact',
+    linkText: 'Contact for Details'
   }
 };
+
+// ===========================
+// Carousel state
+// ===========================
+let carouselImages = [];
+let carouselIndex = 0;
+
+const carouselTrack = document.getElementById('carousel-track');
+const carouselPrev = document.getElementById('carousel-prev');
+const carouselNext = document.getElementById('carousel-next');
+const carouselDotsEl = document.getElementById('carousel-dots');
+
+function buildCarousel(images, title) {
+  carouselImages = images;
+  carouselIndex = 0;
+
+  carouselTrack.innerHTML = images.map(src =>
+    `<img src="${src}" alt="${title}">`
+  ).join('');
+
+  carouselDotsEl.innerHTML = images.map((_, i) =>
+    `<button class="carousel-dot${i === 0 ? ' active' : ''}" data-index="${i}" aria-label="Image ${i + 1}"></button>`
+  ).join('');
+
+  carouselDotsEl.querySelectorAll('.carousel-dot').forEach(dot => {
+    dot.addEventListener('click', () => goToSlide(parseInt(dot.dataset.index)));
+  });
+
+  updateCarousel();
+}
+
+function goToSlide(index) {
+  carouselIndex = index;
+  updateCarousel();
+}
+
+function updateCarousel() {
+  carouselTrack.style.transform = `translateX(-${carouselIndex * 100}%)`;
+
+  carouselDotsEl.querySelectorAll('.carousel-dot').forEach((dot, i) => {
+    dot.classList.toggle('active', i === carouselIndex);
+  });
+
+  const single = carouselImages.length <= 1;
+  carouselPrev.classList.toggle('hidden', single || carouselIndex === 0);
+  carouselNext.classList.toggle('hidden', single || carouselIndex === carouselImages.length - 1);
+  carouselDotsEl.style.display = single ? 'none' : 'flex';
+}
+
+carouselPrev.addEventListener('click', () => {
+  if (carouselIndex > 0) goToSlide(carouselIndex - 1);
+});
+
+carouselNext.addEventListener('click', () => {
+  if (carouselIndex < carouselImages.length - 1) goToSlide(carouselIndex + 1);
+});
 
 const modal = document.getElementById('project-modal');
 const modalClose = document.getElementById('modal-close');
@@ -159,8 +230,7 @@ function openModal(projectId) {
   const data = projectData[projectId];
   if (!data) return;
 
-  document.getElementById('modal-img').src = data.image;
-  document.getElementById('modal-img').alt = data.title;
+  buildCarousel(data.images, data.title);
   document.getElementById('modal-title').textContent = data.title;
   document.getElementById('modal-desc').textContent = data.description;
   document.getElementById('modal-methodology').textContent = data.methodology;
@@ -201,6 +271,8 @@ modal.addEventListener('click', (e) => {
 
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+  if (e.key === 'ArrowLeft' && modal.classList.contains('open') && carouselIndex > 0) goToSlide(carouselIndex - 1);
+  if (e.key === 'ArrowRight' && modal.classList.contains('open') && carouselIndex < carouselImages.length - 1) goToSlide(carouselIndex + 1);
 });
 
 // ===========================
