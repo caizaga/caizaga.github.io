@@ -455,6 +455,19 @@ img { max-width: 100%; display: block; }
   font-size: 0.975rem;
 }
 
+.about-credentials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.about-credentials .tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .about-stats {
   display: flex;
   gap: 40px;
@@ -867,6 +880,131 @@ img { max-width: 100%; display: block; }
 
 .project-link:hover {
   gap: 12px;
+}
+
+/* Featured Project */
+.project-featured {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 0;
+  background: var(--surface-2);
+  border: 1px solid rgba(74, 222, 128, 0.3);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 28px;
+  box-shadow: 0 0 40px rgba(74, 222, 128, 0.06);
+  transition: box-shadow var(--transition), border-color var(--transition);
+}
+
+.project-featured:hover {
+  border-color: rgba(74, 222, 128, 0.55);
+  box-shadow: 0 0 60px rgba(74, 222, 128, 0.1);
+}
+
+.featured-visual {
+  background: linear-gradient(135deg, #0d1117 0%, #111a14 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 32px;
+  border-right: 1px solid var(--border);
+}
+
+.pipeline-diagram {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pipe-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface);
+  border: 1px solid rgba(74, 222, 128, 0.25);
+  border-radius: var(--radius-sm);
+  padding: 16px 14px;
+  width: 72px;
+}
+
+.pipe-node i {
+  color: var(--accent);
+  font-size: 1.3rem;
+}
+
+.pipe-node span {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+}
+
+.pipe-arrow {
+  color: rgba(74, 222, 128, 0.4);
+  font-size: 0.85rem;
+}
+
+.featured-content {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.featured-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.featured-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(74, 222, 128, 0.15);
+  color: var(--accent);
+  border: 1px solid rgba(74, 222, 128, 0.35);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 4px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.04em;
+}
+
+.featured-content h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.featured-content > p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+/* 3-column grid for regular projects */
+.projects-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 1024px) {
+  .project-featured {
+    grid-template-columns: 1fr;
+  }
+  .featured-visual {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding: 32px;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 /* Coming Soon card */
