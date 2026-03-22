@@ -298,6 +298,7 @@ skillFills.forEach(fill => skillObserver.observe(fill));
 // Easter egg — Nuclear Throne
 // ===========================
 const ntToast = document.getElementById('nt-toast');
+const ntAudio = new Audio('Assets/sndMutant2Wrld.wav');
 const ntSequence = 'throne';
 let ntBuffer = '';
 let ntTimer = null;
@@ -312,6 +313,8 @@ document.addEventListener('keydown', (e) => {
 
   if (ntBuffer === ntSequence) {
     ntBuffer = '';
+    ntAudio.currentTime = 0;
+    ntAudio.play();
     ntToast.classList.add('show');
     setTimeout(() => ntToast.classList.remove('show'), 4000);
   }
