@@ -150,19 +150,21 @@ const projectData = {
     linkText: 'View Dashboard'
   },
   'pipeline': {
-    title: 'Econometric Pipeline Project',
-    images: ['Assets/R.png', 'Assets/P1.png', 'Assets/T2.png'],
-    description: 'End-to-end data pipeline for socioeconomic survey collection, automated ETL cleaning, econometric modeling, and interactive BI visualization. This project integrates field research methodology with modern cloud infrastructure to produce reproducible, publication-ready analysis.',
-    methodology: '[Placeholder] Survey design using KoboToolbox → automated ETL pipeline in Python with data validation and cleaning → econometric modeling (OLS, panel data, instrumental variables) in Python/R → results published to interactive Power BI dashboard hosted on GCP. Full pipeline orchestrated via scheduled Cloud Functions.',
+    title: 'Health Microinsurance Survey Pipeline',
+    images: ['Assets/p1_1.png', 'Assets/p1_2.png', 'Assets/p1_3.png', 'Assets/p1_4.png', 'Assets/p1_5.png'],
+    description: 'ETL pipeline for processing a field survey on the health impact of microinsurance among vulnerable populations. Automates the full flow from Google Forms to an interactive Looker Studio dashboard — covering ingestion, cleaning, recoding of open-text responses, and bivariate analysis with cross-tabulations.',
+    methodology: 'Google Forms → Google Sheets → Python ETL (column normalization, open-text categorization, multi-choice variable explosion, crosstabs with n / row% / column%) → Google Sheets output → Looker Studio interactive dashboard. Pipeline designed for reproducibility: re-running the script on updated form responses regenerates all outputs automatically.',
     results: [
-      '[Placeholder] Automated ingestion of 1,000+ survey responses with zero manual intervention.',
-      '[Placeholder] Econometric model identifying key socioeconomic determinants with statistically significant results.',
-      '[Placeholder] Interactive dashboard enabling real-time exploration of model outputs by stakeholders.',
-      '[Placeholder] Pipeline reduces time-to-insight from weeks to hours compared to previous manual workflow.'
+      '43% of affiliates report lower healthcare spending since enrollment — the effect is strongest in the low-income segment.',
+      '72% used the plan in the past year, but only 1 in 5 accesses it preventively, pointing to a utilization gap.',
+      '45% have no other insurance coverage — for this segment, the plan is their only safety net.',
+      '47% feel fully protected; 28% have coverage but maintain active health concerns, signaling a perception-protection gap.'
     ],
-    tags: ['Python', 'BigQuery', 'Econometrics', 'ETL', 'Power BI', 'GCP', 'KoboToolbox'],
-    link: '#contact',
-    linkText: 'Contact for Details'
+    tags: ['Python', 'Google Sheets', 'Looker Studio', 'ETL', 'Survey Analysis', 'Health Economics'],
+    link: 'https://lookerstudio.google.com/reporting/597550ec-2ae1-4998-8595-81134096159d',
+    linkText: 'View Dashboard',
+    link2: 'https://github.com/caizaga/survey-analysis-pipeline',
+    linkText2: 'View Code'
   }
 };
 
@@ -243,6 +245,15 @@ function openModal(projectId) {
   const link = document.getElementById('modal-link');
   link.href = data.link;
   link.innerHTML = `${data.linkText} <i class="fa-solid fa-arrow-up-right-from-square"></i>`;
+
+  const link2 = document.getElementById('modal-link2');
+  if (data.link2) {
+    link2.href = data.link2;
+    link2.innerHTML = `${data.linkText2} <i class="fa-brands fa-github"></i>`;
+    link2.classList.remove('hidden');
+  } else {
+    link2.classList.add('hidden');
+  }
 
   modal.setAttribute('aria-hidden', 'false');
   modal.classList.add('open');

@@ -1496,6 +1496,12 @@ footer {
   top: 3px;
 }
 
+.modal-link-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 .modal-footer {
   display: flex;
   align-items: center;
